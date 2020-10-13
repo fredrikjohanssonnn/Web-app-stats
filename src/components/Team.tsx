@@ -12,8 +12,8 @@ interface Props {
 }
 
 export const Row = styled.tr`
- font-weight: 300;
- color: #000;
+ font-weight: 400;
+ color: rgb(58, 58, 58);
 `
 
 export const Item = styled.td`

@@ -66,12 +66,12 @@ export let scorers = [
   },
   {
     name: 'Johan Rågberger',
-    played: 3,
+    played: 2,
     scored: 2,
   },
   {
     name: 'Joacim Lind',
-    played: 3,
+    played: 2,
     scored: 1,
   },
   {

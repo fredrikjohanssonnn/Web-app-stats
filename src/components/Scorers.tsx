@@ -2,17 +2,17 @@ import React from 'react'
 import { scorers } from '../data'
 
 import Scorer from './Scorer'
-import { Wrapper } from './Table'
+import { Wrapper, Header, Name } from './Table'
 
 const Scorers = () => {
     return (
         <Wrapper>
         <thead>
           <tr>
-          <th>Position</th>
-          <th>Namn</th>
-          <th>Spelade matcher</th>
-          <th>Gjorda mål</th>
+          <Header>Position</Header>
+          <Name>Namn</Name>
+          <Header>Spelade matcher</Header>
+          <Header>Gjorda mål</Header>
           </tr>
         </thead>
         <tbody>
