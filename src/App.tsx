@@ -1,12 +1,14 @@
 import * as React from "react";
-import "./styles.css";
+import './style.css';
 
 import Table from './components/Table';
+import Scorers from './components/Scorers';
 
 export default function App() {
   return (
-    <div className="App">
+    <React.Fragment>
       <Table/>
-    </div>
+      <Scorers/>
+    </React.Fragment>
   );
 }

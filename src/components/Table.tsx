@@ -1,10 +1,17 @@
 import React from 'react';
+import styled from 'styled-components'
+
 import Team from './Team';
-import teams from '../data.ts'
+import { teams } from '../data'
+
+export const Wrapper = styled.table`
+border-spacing:20px;
+border-collapse: separate;
+`
 
 const Table = () => {
   return (
-    <table>
+    <Wrapper>
         <thead>
           <tr>
           <th>Position</th>
@@ -25,11 +32,11 @@ const Table = () => {
           even={team.even}
           lose={team.lose}
           points={team.points}
-          key={index}
+          position={index}
         />
         ))}
         </tbody>
-    </table>
+    </Wrapper>
   )
 }
 
