@@ -9,10 +9,10 @@ const Scorers = () => {
         <TableContainer>
         <thead>
           <HeaderContainer>
-          <Header>Position</Header>
-          <Name>Namn</Name>
-          <Header>Spelade matcher</Header>
-          <Header>Gjorda mål</Header>
+            <Header>Position</Header>
+            <Name>Namn</Name>
+            <Header>Spelade matcher</Header>
+            <Header>Gjorda mål</Header>
           </HeaderContainer>
         </thead>
         <tbody>

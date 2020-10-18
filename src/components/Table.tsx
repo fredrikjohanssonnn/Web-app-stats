@@ -31,16 +31,17 @@ export const Name = styled.th`
 `
 
 const Table = () => {
+
   return (
     <TableContainer>
         <thead>
           <HeaderContainer>
             <Header>Position</Header>
             <Name>Lag</Name>
-            <Header>Spelade</Header>
-            <Header>Vunna</Header>
-            <Header>Oavgjorda</Header>
-            <Header>Förlorade</Header>
+            <Header>S</Header>
+            <Header>V</Header>
+            <Header>O</Header>
+            <Header>F</Header>
             <Header>Poäng</Header>
           </HeaderContainer>
         </thead>
