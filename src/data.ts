@@ -46,18 +46,18 @@ teams.sort((a, b) => b.points - a.points)
 export let scorers = [
   {
     name: 'Fredrik Johansson',
-    played: 3,
+    played: 4,
     scored: 1,
   },
   {
     name: 'Lazaros Athanasiadis',
-    played: 3,
+    played: 4,
     scored: 1,
   },
   {
     name: 'Alexander Aspenrud',
-    played: 3,
-    scored: 2,
+    played: 4,
+    scored: 4,
   },
   {
     name: 'Oskar Prenkert',
@@ -76,8 +76,8 @@ export let scorers = [
   },
   {
     name: 'Jim Stjernström',
-    played: 3,
-    scored: 2,
+    played: 4,
+    scored: 5,
   },
 ]
 

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React, { useState } from "react";
 import styled from 'styled-components'
 import './style.css';
 
@@ -10,24 +10,41 @@ const Wrapper = styled.div`
   justify-content: space-between;
   margin: 0 auto;
   width: 1070px;
+  padding-left: 10px;
+  padding-right: 10px;
 `
 
-const Title = styled.h1`
+const Center = styled.div`
   display: flex;
   justify-content: center;
+  text-align: center;
+`
+
+const Button = styled.button`
+
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+  background-color: #C73D78;
+  padding: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  min-width: 100px;
+  cursor: pointer;
+  border-radius: 5px;
 `
 
 export default function App() {
+
+  const [display, setDisplay] = useState(true);
+
   return (
-    <Wrapper>
+    <Center>
       <div>
-        <Title>Serie</Title>
-        <Table/>
+        <Button onClick={() => setDisplay(true)}>Serie</Button>
+        <Button onClick={() => setDisplay(false)}>Poängliga</Button>
+        {display ? <Table/> : <Scorers/>}
       </div>
-      <div>
-        <Title>Skytteliga</Title>
-        <Scorers/>
-      </div>
-    </Wrapper>
+    </Center>
   );
 }

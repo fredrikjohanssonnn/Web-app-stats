@@ -2,18 +2,18 @@ import React from 'react'
 import { scorers } from '../data'
 
 import Scorer from './Scorer'
-import { Wrapper, Header, Name } from './Table'
+import { HeaderContainer, TableContainer, Header, Name } from './Table'
 
 const Scorers = () => {
     return (
-        <Wrapper>
+        <TableContainer>
         <thead>
-          <tr>
+          <HeaderContainer>
           <Header>Position</Header>
           <Name>Namn</Name>
           <Header>Spelade matcher</Header>
           <Header>Gjorda mål</Header>
-          </tr>
+          </HeaderContainer>
         </thead>
         <tbody>
         {scorers.map((scorer, index) => (
@@ -25,7 +25,7 @@ const Scorers = () => {
         />
         ))}
         </tbody>
-    </Wrapper>
+    </TableContainer>
     )
 }
 

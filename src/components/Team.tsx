@@ -14,10 +14,12 @@ interface Props {
 export const Row = styled.tr`
  font-weight: 400;
  color: rgb(58, 58, 58);
+ border-bottom: 1px solid #ddd;
 `
 
 export const Item = styled.td`
   text-align: center;
+  padding: 12px 15px;
 `
 
 const Team: React.FC<Props> = ({ position, name, played, wins, even, lose, points }) => {

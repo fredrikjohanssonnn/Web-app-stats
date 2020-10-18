@@ -11,7 +11,7 @@ interface Props {
 const Scorer: React.FC<Props> = ({ position, name, played, scored }) => {
     return (
         <Row>
-            <Item>{position +1}</Item>
+            <Item>{position + 1}</Item>
             <td>{name}</td>
             <Item>{played}</Item>
             <Item>{scored}</Item>
